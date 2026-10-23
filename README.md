@@ -13,7 +13,11 @@ then open http://localhost:8000/.
 
 ## Deploy
 
-Pick one:
+**Live:** https://jacklehamster.github.io/portfolio/ from the `main` branch of https://github.com/jacklehamster/portfolio
+(GitHub Pages, source "Deploy from a branch", folder `/`). To publish a change: commit on `main` and `git push`;
+the `pages-build-deployment` workflow redeploys in about a minute.
+
+Other options considered:
 
 1. **GitHub Pages, project site** (URL `https://jacklehamster.github.io/portfolio/`): create an empty public repo
    `jacklehamster/portfolio`, push this folder to its `main` branch, enable Pages on `main` / root.
