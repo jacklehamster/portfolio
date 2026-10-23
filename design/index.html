@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vincent Le Quang — Game & UI designer who ships</title>
+<meta name="description" content="Design portfolio of Vincent Le Quang: games people can read in one glance, designed, drawn, scored and built end to end. Power Troll, World of Turtle, accessibility games.">
+<meta property="og:title" content="Vincent Le Quang — Design portfolio">
+<meta property="og:description" content="I design games people can read in one glance, then I build them end to end.">
+<meta property="og:image" content="img/pt-menu.webp">
+<link rel="icon" href="img/pt-logo.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to the work</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="dot" aria-hidden="true"></span>Vincent Le Quang</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#troll">Power Troll</a>
+      <a href="#turtle">World of Turtle</a>
+      <a href="#access">Accessibility</a>
+      <a href="#more">More</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="theme" type="button" aria-label="Switch theme">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="kicker">Vincent Le Quang · game &amp; interface designer who ships</p>
+      <h1 id="h1">I design games people can read in one glance, <em>then I build them end to end.</em></h1>
+      <p class="lede">Interface, levels, art, animation, music and code, all by one pair of hands, from 48‑hour jams to Steam. Thirteen years of deciding what a player sees first, what a button must never do, and how a game stays playable with one finger or no eyes at all.</p>
+      <div class="hero-cta">
+        <a class="btn btn-ink" href="#troll">See the work ↓</a>
+        <a class="btn btn-ghost" href="resume.html">Résumé</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/vincentlequang/">LinkedIn</a>
+      </div>
+    </div>
+    <figure class="hero-art">
+      <img src="img/hero-troll.webp" width="1000" height="750" alt="The cast of The Supernatural Power Troll: the troll in the middle holding a glowing question-mark cube, surrounded by the humans he has transformed." fetchpriority="high">
+      <figcaption>Key art, The Supernatural Power Troll, 2024</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="stats" aria-label="In numbers">
+  <div class="wrap">
+    <div class="stat"><b>~60 games shipped</b><span>3 on Steam, 2 on Google Play, 2 on the App Store, the rest on itch.io and Newgrounds.</span></div>
+    <div class="stat"><b>Every pixel mine</b><span>UI, sprites and cutscenes in Aseprite, music in Beepbox, voices, animation, level editors.</span></div>
+    <div class="stat"><b>Accessible since 2014</b><span>A game played with eyes closed. A platformer with one button. Subtitled synthetic speech.</span></div>
+  </div>
+</section>
+
+<div id="work"></div>
+
+<!-- ===================== 01 POWER TROLL ===================== -->
+<section class="section case-troll" id="troll" aria-labelledby="h-troll">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="num">01 / 04</div>
+      <div>
+        <h2 id="h-troll">The Supernatural Power Troll</h2>
+        <p class="meta"><b>Puzzle platformer</b> · GameDev.js Jam 2024 → Steam, December 2024 · design, art, UI, levels, editor, music · solo</p>
+      </div>
+    </div>
+
+    <figure class="fig fig-hero" style="--ar: 4/3">
+      <img src="img/pt-menu.webp" width="1600" height="1200" alt="Main menu of Power Troll: the hand-drawn cast on a yellow-to-red gradient, with three options: New game, Browse user levels, Level editor." loading="eager">
+      <figcaption><b>Main menu.</b> The whole cast drawn by hand, three choices, nothing else competing for attention.</figcaption>
+    </figure>
+
+    <div class="cards">
+      <div class="card">
+        <h3><span class="tag">The brief</span></h3>
+        <p>A 48‑hour jam on the theme “Power”: you are a troll who hands humans chaotic superpowers. Then a Steam release with fifty levels, bosses, cutscenes and a level editor. Every screen had to read instantly in pixel art, and the humans had to feel alive.</p>
+      </div>
+      <div class="card soft">
+        <h3><span class="tag">Design decisions</span></h3>
+        <ul>
+          <li>One key, one door, one exit per level. Fruit is the only safe way to touch a human.</li>
+          <li>The HUD is score and lives, nothing more. The first vase on the first ledge is the tutorial.</li>
+          <li>Humor is the state signal: what a human says tells you what you just did to them.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <figure class="fig" style="--ar: 16/9">
+        <img src="img/pt-level1.webp" width="1280" height="720" alt="Level 1 of Power Troll: a key on a ledge, a sleeping rock, grass platforms and the exit door, all readable at a glance." loading="lazy">
+      </figure>
+      <div class="row-text">
+        <h3>Level 1 is the tutorial</h3>
+        <p>Key, platforms, a sleeping rock, the door. Nothing you cannot name in a second. The first level teaches the three verbs of the game without a single line of text, and every later level is a variation on that sentence.</p>
+      </div>
+    </div>
+
+    <div class="row flip">
+      <figure class="fig" style="--ar: 1449/1031">
+        <img src="img/pt-chat.webp" width="1449" height="1031" alt="A human character in Power Troll speaking a generated line, shown as a subtitle under the scene." loading="lazy">
+      </figure>
+      <div class="row-text">
+        <h3>NPCs that talk back</h3>
+        <p>Every human is assembled at random from drawn parts, given a personality, and their dialogue is generated as you play and read by a speech synthesizer in a random voice, always subtitled.</p>
+        <p>The design problem was not the technology but restraint: dialogue appears only on events, stays short, is always subtitled, and never blocks the player.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <figure class="fig pixel" style="--ar: 5/3">
+        <img src="img/pt-editor.webp" width="1200" height="720" alt="Editor mode of Power Troll: a palette of platforms, items and humans over the level grid." loading="lazy">
+      </figure>
+      <div class="row-text">
+        <h3>An editor sized for players, not for me</h3>
+        <p>The in-game editor shows only what a player needs to build a level in minutes: platforms, items, humans. Everything else is hidden. Levels are plain JSON, so the community set lives in its own public repository and “Browse user levels” sits on the main menu next to “New game”.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure class="fig" style="--ar: 1194/715"><img src="img/pt-cutscene-knight.webp" width="1194" height="715" alt="Hand-drawn cutscene panel: a knight on a horse in front of a cave, with the caption “Step aside, vile troll!”." loading="lazy"><figcaption>Hand-drawn cutscene panels carry the story between levels.</figcaption></figure>
+      <figure class="fig" style="--ar: 16/9"><img src="img/pt-ss7.webp" width="1920" height="1080" alt="A later level of Power Troll with several humans, rocks and a boss." loading="lazy"><figcaption>Later levels add bosses and crowds, never a new HUD element.</figcaption></figure>
+      <figure class="fig" style="--ar: 16/9">
+        <video data-loop autoplay muted loop playsinline preload="metadata" poster="img/pt-level5-poster.webp" width="1280" height="720" aria-label="Level 5 of Power Troll in motion">
+          <source src="img/pt-level5.webm" type="video/webm">
+          <source src="img/pt-level5.mp4" type="video/mp4">
+        </video>
+        <figcaption>Level 5 in motion.</figcaption>
+      </figure>
+    </div>
+
+    <div class="process">
+      <div class="process-head"><h3>Process</h3><span class="mono">from jam build to Steam</span></div>
+      <div class="compare">
+        <figure class="fig" style="--ar: 16/9"><span class="label">April 2024 · jam build</span><img src="img/pt-jam-level8.webp" width="1600" height="960" alt="Early jam build of Power Troll: grey-blue translucent platforms over a mountain backdrop, small sprites, a key and a door." loading="lazy"><figcaption>Forty-eight hours in: translucent blocks, a blue mountain backdrop, and humans who did not yet talk.</figcaption></figure>
+        <figure class="fig" style="--ar: 16/9"><span class="label">December 2024 · Steam</span><img src="img/pt-ss4.webp" width="1280" height="720" alt="Final version of a Power Troll level: grass ledges, rocks, pink boss, readable sprites." loading="lazy"><figcaption>Eight months later: grass ledges and rocks you can read at a glance, bosses, and a cast that comments on what you do.</figcaption></figure>
+      </div>
+      <div class="compare">
+        <figure class="fig contain" style="--ar: 4/3; --fig-bg:#fff"><span class="label">First title mock</span><img src="img/pt-title-mock.webp" width="1200" height="900" alt="First title mock of Power Troll: the troll peeking over a box under a spotlight, with an empty oval where the cast would go." loading="lazy"><figcaption>The first title mock: the troll peeking over a box under a spotlight, an empty oval where the cast would go.</figcaption></figure>
+        <figure class="fig pixel" style="--ar: 5/3"><span class="label">Tileset</span><img src="img/pt-tileset.webp" width="1200" height="720" alt="The Power Troll tileset: grass-topped dirt and rock blocks in every combination needed to build ledges." loading="lazy"><figcaption>The tileset that replaced the translucent blocks: every edge and corner a ledge can need, drawn once.</figcaption></figure>
+      </div>
+      <div class="cards">
+        <div class="card soft">
+          <h3><span class="tag">What got thrown away</span></h3>
+          <p>The game started as a high-school setting (the source folder is still called <code>hischool</code>) and became an outdoor fantasy world of grass ledges, rocks and doors. The humans kept their school-kid look, which is part of why they feel out of place, and why it is funny.</p>
+        </div>
+        <div class="card">
+          <h3><span class="tag">How it was made</span></h3>
+          <p>Forty-eight hours for the jam build, eight months to the Steam release. 63 Aseprite source files for sprites, bosses and cutscene panels; every level a 150‑line JSON with named layers (ground, key, door, rock, human, monster). The backlog still ends with “Collectible? Secret doors? Crates?”: ideas that stayed ideas so the game could ship.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shipped">
+      <span class="tag">Shipped</span>
+      <a href="https://store.steampowered.com/app/3331280/The_Supernatural_Power_Troll/">Steam</a><span class="sep">·</span>
+      <a href="https://jacklehamster.itch.io/power-troll">itch.io</a><span class="sep">·</span>
+      <a href="https://kotaku.com/games/the-supernatural-power-troll">Kotaku listing</a><span class="sep">·</span>
+      <a href="https://dev.to/jacklehamster">write-ups on dev.to</a><span class="sep">·</span>
+      <span>Art in Aseprite, music in Beepbox, sound in ZZFX.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 02 WORLD OF TURTLE ===================== -->
+<section class="section case-turtle" id="turtle" aria-labelledby="h-turtle">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="num">02 / 04</div>
+      <div>
+        <h2 id="h-turtle">World of Turtle</h2>
+        <p class="meta"><b>Sokoban puzzle</b> · BASIC (ASCII) → Flash on Newgrounds, 2011–2013 → TypeScript / WebGL on Steam and Google Play, 2023 · design, art, UI, 100 levels · solo</p>
+      </div>
+    </div>
+
+    <figure class="fig fig-hero" style="--ar: 3/2">
+      <img src="img/wot-01.webp" width="1600" height="1066" alt="World of Turtle gameplay: an island of pink and wooden tiles over water, conveyor arrows, crocodiles, and Babo Turtle one step from the exit." loading="lazy">
+      <figcaption><b>Conveyor arrows, breakable planks, crocodiles</b>, and Babo Turtle one move from the exit.</figcaption>
+    </figure>
+
+    <div class="cards">
+      <div class="card">
+        <h3><span class="tag">The brief</span></h3>
+        <p>The same puzzle game rebuilt three times across twelve years. The rules never changed: push, collect fruit, reach the exit. The interface changed every time: ASCII to sprites, mouse to touch and gamepad, a web page to a Steam window.</p>
+      </div>
+      <div class="card soft">
+        <h3><span class="tag">Design decisions</span></h3>
+        <ul>
+          <li>The grid is drawn in 2.5D so height and gaps read without a legend.</li>
+          <li>Keyboard, gamepad and touch are all first-class, AZERTY and QWERTY both.</li>
+          <li>Five level-skip passes that you earn back, so a stuck player is never stuck for good.</li>
+          <li>One menu column, big targets, nothing nested more than one level deep.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <figure class="fig" style="--ar: 3/2">
+        <img src="img/wot-06.webp" width="1600" height="1066" alt="World of Turtle settings menu: a single column of wide buttons: Back, Audio, Graphics, Controls, Language, Walkthrough, Generate activation key, Reset saved data." loading="lazy">
+      </figure>
+      <div class="row-text">
+        <h3>Settings in one column</h3>
+        <p>Every input method is treated as the main one, so the menu has to work with a thumb, a stick and a mouse. One column, eight wide targets, no sub-menus you can get lost in.</p>
+      </div>
+    </div>
+
+    <div class="row flip">
+      <figure class="fig" style="--ar: 3/2">
+        <img src="img/wot-07.webp" width="1600" height="1066" alt="World of Turtle level select: a ten-by-ten grid of level tiles, from 1-1 to 10-10, all visible at once." loading="lazy">
+      </figure>
+      <div class="row-text">
+        <h3>A hundred levels on one screen</h3>
+        <p>Ten stages of ten. The whole game fits on one screen, so progress is something you see rather than something you are told. Each stage introduces one new element, and a skip pass lets you jump a wall without leaving the grid.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure class="fig" style="--ar: 3/2"><img src="img/wot-03.webp" width="1600" height="1066" alt="A World of Turtle level with palm trees, ice tiles, penguins and a gorilla." loading="lazy"><figcaption>Ice, penguins and gorillas, stage by stage.</figcaption></figure>
+      <figure class="fig" style="--ar: 3/2"><img src="img/wot-04.webp" width="1600" height="1066" alt="A World of Turtle level ringed by crocodiles in the water." loading="lazy"><figcaption>Crocodiles: the water is not empty.</figcaption></figure>
+      <figure class="fig" style="--ar: 3/2"><img src="img/wot-05.webp" width="1600" height="1066" alt="A World of Turtle level with penguins on ice, tomatoes to collect and the X exit." loading="lazy"><figcaption>Penguins only move on ice. The level teaches it by itself.</figcaption></figure>
+    </div>
+
+    <div class="process">
+      <div class="process-head"><h3>Process</h3><span class="mono">teaching without a tutorial</span></div>
+      <div class="compare">
+        <figure class="fig" style="--ar: 3/2"><span class="label">Rule in the world</span><img src="img/wot-10.webp" width="1600" height="1066" alt="A World of Turtle level with its rule written on the water next to it: grab two apples then reach the X; sliding on ice you do not stop; wood and broken ice break once you step off." loading="lazy"><figcaption>The rule is written on the water next to the level that needs it, three sentences, then the game gets out of the way.</figcaption></figure>
+        <figure class="fig" style="--ar: 1800/1448"><span class="label">Brief by a character</span><img src="img/wot-13.webp" width="1600" height="1287" alt="A dialogue card in World of Turtle: a turtle character says “Alright, you know the drill. Get all fruits off the island.”" loading="lazy"><figcaption>The whole brief in two sentences, delivered by a character instead of a dialog box.</figcaption></figure>
+      </div>
+      <div class="cards">
+        <div class="card soft">
+          <h3><span class="tag">What got thrown away</span></h3>
+          <p>Separate tutorial screens. The remaster puts each new rule in the world, beside the first level that uses it, and never interrupts. There is no lives counter either: a Sokoban is about undoing, so progress is kept as you go and the only scarce resource is the skip pass.</p>
+        </div>
+        <div class="card">
+          <h3><span class="tag">How it was made</span></h3>
+          <p>Ten stages of ten levels, each stage built around a new element (ice, conveyors, breakable planks, penguins, gorillas, crocodiles) introduced on its own before it is combined with the others. The 2.5D grid replaced the flat Flash view so that height and gaps are visible without a legend. Three languages shipped with full audio.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shipped">
+      <span class="tag">Shipped</span>
+      <a href="https://store.steampowered.com/app/2258040/World_of_Turtle/">Steam</a><span class="sep">·</span>
+      <a href="https://play.google.com/store/apps/details?id=net.dobuki.worldofturtle">Google Play</a><span class="sep">·</span>
+      <a href="https://jacklehamster.itch.io/world-of-turtle-remaster">itch.io demo</a><span class="sep">·</span>
+      <span>English, French and Korean, full audio and subtitles · a jukebox DLC with one song per stage, all composed by me.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 03 ACCESSIBILITY ===================== -->
+<section class="section case-access" id="access" aria-labelledby="h-access">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="num">03 / 04</div>
+      <div>
+        <h2 id="h-access">Designing for one button, or no eyes</h2>
+        <p class="meta"><b>Blink Pong and Darwin Gator</b> · LowRezJam and AccessibilityJam, 2014 · App Store and Google Play · solo</p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card soft">
+        <h3><span class="tag">Blink Pong</span></h3>
+        <p>A ping-pong game you can play with your eyes closed. You do not aim; you time. The bounce tells you where the ball is, a voice announces score and level, and the only input is one button. Vision, cognition and motor load each reduced to one thing.</p>
+      </div>
+      <div class="card">
+        <h3><span class="tag">Darwin Gator</span></h3>
+        <p>Five one-button games in one, with bosses and three stages, for players with motor disabilities. The constraint shaped every mechanic: if it cannot be done with a single press, it is not in the game.</p>
+      </div>
+    </div>
+
+    <div class="compare">
+      <figure class="fig pixel contain" style="--ar: 5/4; --fig-bg:#111"><img src="img/blink-pong.webp" width="945" height="750" alt="Blink Pong: a 32 by 32 pixel table-tennis scene, the ball mid-flight." loading="lazy"><figcaption><b>Blink Pong.</b> The ball is where the sound is. The whole game in 32×32 pixels.</figcaption></figure>
+      <figure class="fig" style="--ar: 1/1"><img src="img/darwin-gator.webp" width="1099" height="1103" alt="Darwin Gator: a pixel-art platformer level with red brick platforms, a gator in a pink shirt and a turtle enemy." loading="lazy"><figcaption><b>Darwin Gator.</b> A full platformer on a single button: jump is the only verb.</figcaption></figure>
+    </div>
+
+    <div class="process">
+      <div class="process-head"><h3>Process</h3><span class="mono">one load at a time</span></div>
+      <div class="three">
+        <div class="card soft"><h3><span class="tag">Vision</span></h3><p>Remove it as a requirement, not as a feature. The table and paddle each have a distinct hit sound, so the ball is where the sound is. Score and level are spoken. The screen still draws the game for sighted players.</p></div>
+        <div class="card soft"><h3><span class="tag">Cognition</span></h3><p>One decision per moment: hit now, or not. No aiming, no power, no spin. Difficulty comes from timing windows, never from more things to track.</p></div>
+        <div class="card soft"><h3><span class="tag">Motor</span></h3><p>One input, any input: a mouse button, any key, a tap. Darwin Gator takes the same rule into a platformer: running, bosses and missions are all designed around when you press, not what you press.</p></div>
+      </div>
+      <p style="margin-top:28px"><strong>Two jams, one game.</strong> Blink Pong was entered in LowRezJam (the whole game in a 32×32 pixel canvas) and AccessibilityJam at the same time. The two constraints pulled the same way: when you cannot rely on the picture, you design the sound and the timing first, and the picture becomes a bonus. That order of work, sound and rhythm before pixels, is the one I still use.</p>
+    </div>
+
+    <div class="shipped">
+      <span class="tag">Shipped</span>
+      <a href="https://jacklehamster.itch.io/blink-pong">Blink Pong</a><span class="sep">·</span>
+      <a href="https://jacklehamster.itch.io/darwin-gator">Darwin Gator</a><span class="sep">·</span>
+      <span>both in the Dobuki Game Anthology. The same instinct shows up ten years later in Power Troll’s subtitled speech and in World of Turtle’s skip passes.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 04 MORE ===================== -->
+<section class="section case-misc" id="more" aria-labelledby="h-more">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="num">04 / 04</div>
+      <div>
+        <h2 id="h-more">Three more, briefly</h2>
+        <p class="meta">An adventure game, a 13‑kilobyte roguelike, and a launcher for twenty-three games.</p>
+      </div>
+    </div>
+
+    <div class="brief-grid">
+      <article class="brief">
+        <img src="img/epic-journey.webp" width="601" height="449" alt="Dobuki’s Epic Journey: a hand-drawn adventure screen with the hero, an inventory and a dialogue." loading="lazy">
+        <div class="body">
+          <h3>Dobuki’s Epic Journey</h3>
+          <span class="mono">Steam, 2023 · adventure / RPG</span>
+          <p>An adventure across three planets, non-linear, with skill progression and a cast of hand-drawn characters. Inventory, dialogue and map had to coexist on one small screen without a tutorial.</p>
+        </div>
+      </article>
+      <article class="brief">
+        <img src="img/terror-mongolia.webp" width="1600" height="649" alt="The Terror of Mongolia: a top-down pixel-art shooter scene." loading="lazy">
+        <div class="body">
+          <h3>The Terror of Mongolia</h3>
+          <span class="mono">js13kgames 2023 · 12th place</span>
+          <p>A whole game, art and music included, in 13 KB of JavaScript. When every byte is an interface decision, you learn what a screen really needs.</p>
+        </div>
+      </article>
+      <article class="brief">
+        <img src="img/anthology.webp" width="1600" height="1198" alt="The Dobuki Game Anthology launcher: a two-column list of 23 games, a card with release date and player count, and a big orange Play button." loading="lazy">
+        <div class="body">
+          <h3>Dobuki Game Anthology</h3>
+          <span class="mono">2017 · launcher for 23 games</span>
+          <p>Twenty-three Flash games from 2013 to 2017 in one application. A two-column list that fits every title without scrolling, a card with release date, player count and a one-line hook, a star to favorite, one orange Play button.</p>
+        </div>
+      </article>
+    </div>
+
+    <blockquote class="quote">“My first fully finished project is World of Turtle, which was a real breakthrough for me.”<cite>From the note that opens the anthology, 2017</cite></blockquote>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="section" id="about" aria-labelledby="h-about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="num" style="--accent: var(--ink)">About</div>
+      <div><h2 id="h-about">The engineer on the other side of the handoff</h2></div>
+    </div>
+    <div class="about">
+      <div>
+        <p>I have made games since 2013 under the name <strong>Dobuki Studio</strong>: about sixty of them, three on Steam, from one-hour jams to year-long releases. I draw, animate and compose everything you see and hear in them. I write about the craft on <a href="https://dev.to/jacklehamster">dev.to</a> and I volunteer with Adobe Youth Voices helping students edit video.</p>
+        <p>By day I am a Staff Software Engineer at Skydio on the Remote Flight Deck team, the web cockpit that pilots a drone from miles away, and I hold an FAA Part 107 remote pilot certificate. Before that: Amazon (Astro, GameLift), Thumbtack, Storm8, Adobe, K‑Factor Media, and a Microsoft research contract on learning games for children.</p>
+        <p>I know what it is like to be the engineer on the other side of a Figma handoff, which is exactly why I want to be on the design side of it.</p>
+      </div>
+      <div class="side">
+        <div class="card">
+          <h3><span class="tag" style="--accent: var(--ink)">Tools</span></h3>
+          <ul class="pill-list">
+            <li>Aseprite</li><li>Beepbox</li><li>ZZFX</li><li>TypeScript</li><li>React</li><li>WebGL</li><li>Phaser</li><li>Unity</li><li>Storybook</li><li>Chromatic</li><li>Axe</li><li class="hi">Figma, leveling up with AI in the loop</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><span class="tag" style="--accent: var(--ink)">Links</span></h3>
+          <ul class="pill-list">
+            <li><a href="https://www.linkedin.com/in/vincentlequang/">LinkedIn</a></li>
+            <li><a href="https://jacklehamster.itch.io/">itch.io</a></li>
+            <li><a href="https://github.com/jacklehamster">GitHub</a></li>
+            <li><a href="https://store.steampowered.com/search/?developer=Dobuki%20Studio">Steam</a></li>
+            <li><a href="resume.html">Résumé</a></li>
+          </ul>
+          <p style="margin:14px 0 0; font-size:.9rem; color:var(--muted)">French and English, bilingual.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>© Vincent Le Quang · Dobuki Studio</span>
+    <a href="mailto:jacklehamster@gmail.com">jacklehamster@gmail.com</a>
+    <span class="right">Designed in Figma, built by hand. No framework, no tracking.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
