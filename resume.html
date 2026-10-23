@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vincent Le Quang — Résumé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#17150f; --ink-2:#3d3930; --muted:#6e675b; --line:#e1d9cb; --paper:#fffdf9; --accent:#ff3fa4; }
+  * { box-sizing: border-box; }
+  html, body { margin:0; background:#eee9df; }
+  body { font-family:"Inter", system-ui, sans-serif; color:var(--ink); font-size:8.4pt; line-height:1.32; -webkit-font-smoothing:antialiased; }
+  .page { width:8.5in; height:11in; margin:24px auto; background:var(--paper); padding:.4in .55in .4in; box-shadow:0 20px 60px -20px rgba(0,0,0,.25); position:relative; overflow:hidden; }
+  .page::before { content:""; position:absolute; left:0; top:0; right:0; height:6px; background:linear-gradient(90deg,#ffd84d,#ff9a2e,#f04e23,#ff3fa4); }
+  a { color:inherit; text-decoration:none; }
+  h1 { font-family:"Fraunces", Georgia, serif; font-weight:600; font-size:25pt; letter-spacing:-.02em; margin:0; line-height:1; }
+  .head { display:grid; grid-template-columns:1fr auto; gap:16px; align-items:end; padding-bottom:10px; border-bottom:1.5px solid var(--ink); margin-bottom:10px; }
+  .head .role { font-family:"Fraunces", Georgia, serif; font-style:italic; font-weight:400; font-size:12pt; color:var(--ink-2); margin-top:6px; }
+  .contact { text-align:right; font-size:8.2pt; color:var(--ink-2); line-height:1.5; }
+  .contact b { color:var(--ink); font-weight:500; }
+  .summary { font-size:9.2pt; color:var(--ink-2); margin:0 0 10px; max-width:none; }
+  .cols { display:grid; grid-template-columns:1.6fr .8fr; gap:20px; }
+  h2 { font-family:"JetBrains Mono", monospace; font-size:7pt; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); font-weight:500; margin:0 0 6px; padding-bottom:3px; border-bottom:1px solid var(--line); display:flex; align-items:center; gap:8px; }
+  h2::before { content:""; width:7px; height:7px; border-radius:2px; background:var(--accent); }
+  .side h2 { --accent:#2f7fd8; }
+  section { margin-bottom:10px; }
+  .item { display:grid; grid-template-columns:58px 1fr; gap:8px; margin-bottom:5px; }
+  .item .when { font-family:"JetBrains Mono", monospace; font-size:6.8pt; color:var(--muted); padding-top:2px; letter-spacing:.02em; }
+  .item h3 { font-family:"Inter", sans-serif; font-weight:600; font-size:9.2pt; margin:0; }
+  .item h3 span { font-weight:400; color:var(--muted); }
+  .item p { margin:1px 0 0; color:var(--ink-2); }
+  .item ul { margin:1px 0 0; padding-left:11px; color:var(--ink-2); }
+  .item li { margin:0; }
+  .work .item h3 em { font-family:"Fraunces", Georgia, serif; font-style:italic; font-weight:500; font-size:10pt; }
+  .pills { display:flex; flex-wrap:wrap; gap:3px; margin:0; padding:0; list-style:none; }
+  .pills li { font-size:7.8pt; padding:1.5px 6px; border:1px solid var(--line); border-radius:999px; background:#f6f1e8; }
+  .pills li.hi { background:#ffe7f3; border-color:transparent; }
+  .edu .item { grid-template-columns:46px 1fr; margin-bottom:4px; }
+  .edu h3 { font-size:8.6pt; }
+  .foot { position:absolute; left:.55in; right:.55in; bottom:.32in; padding-top:6px; border-top:1px solid var(--line); display:flex; justify-content:space-between; font-size:7.2pt; color:var(--muted); }
+  @page { size: Letter; margin:0; }
+  @media print { html, body { background:#fff; } .page { margin:0; box-shadow:none; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="head">
+    <div>
+      <h1>Vincent Le Quang</h1>
+      <div class="role">Game &amp; interface designer who ships · the engineer on the other side of the handoff</div>
+    </div>
+    <div class="contact">
+      <b>San Mateo, California</b><br>
+      <a href="mailto:jacklehamster@gmail.com">jacklehamster@gmail.com</a> · <a href="https://www.linkedin.com/in/vincentlequang/">linkedin.com/in/vincentlequang</a><br>
+      <a href="https://jacklehamster.itch.io/">jacklehamster.itch.io</a> · <a href="https://github.com/jacklehamster">github.com/jacklehamster</a>
+    </div>
+  </div>
+
+  <p class="summary">I design games people can read in one glance, then I build them end to end: interface, levels, art, animation, music and code. Thirteen years and about sixty releases, three on Steam. Looking to move from implementing Figma handoffs to designing them.</p>
+
+  <div class="cols">
+    <div class="main">
+      <section class="work">
+        <h2>Selected design work · Dobuki Studio, 2013 – present</h2>
+        <div class="item">
+          <div class="when">2024</div>
+          <div>
+            <h3><em>The Supernatural Power Troll</em> <span>· puzzle platformer · GameDev.js Jam → Steam</span></h3>
+            <ul>
+              <li>Fifty levels on one readable sentence: one key, one door, one exit; fruit is the only safe way to touch a human.</li>
+              <li>NPCs assembled from drawn parts with generated, spoken, always-subtitled dialogue, shown only on events.</li>
+              <li>In-game level editor that exposes only platforms, items and humans; community levels one click from the menu. 63 Aseprite sources, music and sound, all mine; listed on Kotaku.</li>
+                          </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="when">2011 → 2023</div>
+          <div>
+            <h3><em>World of Turtle</em> <span>· Sokoban puzzle · BASIC → Flash → TypeScript / WebGL on Steam and Google Play</span></h3>
+            <ul>
+              <li>Same rules rebuilt three times; the interface changed every time: ASCII to sprites, mouse to touch and gamepad.</li>
+              <li>Ten stages of ten levels on one screen; every new element taught in the world, no tutorial screens; skip passes instead of lives.</li>
+              <li>English, French and Korean with full audio; one-column menus sized for thumb, stick and mouse.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="when">2014</div>
+          <div>
+            <h3><em>Blink Pong · Darwin Gator</em> <span>· accessibility games · LowRezJam, AccessibilityJam · App Store, Google Play</span></h3>
+            <ul>
+              <li>A pong played with eyes closed (the ball is where the sound is) and a full platformer on a single button.</li>
+              <li>Vision, cognition and motor load each reduced to one thing; sound and timing designed before pixels.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="item">
+          <div class="when">2013 → 2023</div>
+          <div><h3><em>~60 more</em> <span>· Dobuki’s Epic Journey (Steam), The Terror of Mongolia (js13kgames, 12th place), the Dobuki Game Anthology launcher, jams</span></h3></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+        <div class="item"><div class="when">2025 –</div><div><h3>Staff Software Engineer <span>· Skydio, San Mateo</span></h3><p>Remote Flight Deck, the web cockpit that pilots a drone from miles away. Turns Figma handoffs into shipped UI (notifications, controller-matched keyboard bindings, sensor controls) with Storybook, Chromatic and Axe.</p></div></div>
+                <div class="item"><div class="when">2018 – 2023</div><div><h3>Senior Software Engineer <span>· Amazon, Lab126 (Astro) and AWS GameLift</span></h3><p>Led Astro’s eyes animation engine and the UX research prototypes around it; cut animation storage by 90 %; mentored two engineers to promotion.</p></div></div>
+        <div class="item"><div class="when">2016 – 2018</div><div><h3>Software Engineer <span>· Thumbtack</span></h3><p>Growth and UX experiments; led globalization to every language (best hackathon project).</p></div></div>
+        <div class="item"><div class="when">2015 – 2016</div><div><h3>Staff Engineer <span>· Storm8</span></h3><p>Casual mobile games in Unity; led a team of ten to a first-prize claymation game.</p></div></div>
+        <div class="item"><div class="when">2011 – 2015</div><div><h3>Computer Scientist <span>· Adobe</span></h3><p>Led a small team on the AEM Communities iPad app; shipped Adobe Connect features.</p></div></div>
+        <div class="item"><div class="when">2007 – 2011</div><div><h3>Game Developer <span>· K-Factor Media; Siemens / Microsoft Kidtab (contract)</span></h3></div></div>
+      </section>
+    </div>
+
+    <div class="side">
+      <section>
+        <h2>Design</h2>
+        <ul class="pills"><li>Level design</li><li>Game UI</li><li>Pixel art · Aseprite</li><li>Animation</li><li>Music · Beepbox</li><li>Sound · ZZFX</li><li>Accessibility</li><li>Localization EN / FR / KO</li><li>Cutscenes &amp; story</li><li class="hi">Figma · leveling up, AI in the loop</li></ul>
+      </section>
+      <section>
+        <h2>Build</h2>
+        <ul class="pills"><li>TypeScript</li><li>React</li><li>WebGL</li><li>Phaser</li><li>Unity</li><li>Storybook</li><li>Chromatic</li><li>Axe</li><li>Electron</li></ul>
+      </section>
+      <section class="edu">
+        <h2>Education</h2>
+        <div class="item"><div class="when">2008–09</div><div><h3>Academy of Art University</h3><p>Graduate studies, 3D animation</p></div></div>
+        <div class="item"><div class="when">2007–08</div><div><h3>Seattle Film Institute</h3><p>Certification in filmmaking; editing</p></div></div>
+        <div class="item"><div class="when">1998–00</div><div><h3>UC Irvine</h3><p>BS, Computer Science; ACM contest</p></div></div>
+        <div class="item"><div class="when">1996–98</div><div><h3>Santa Ana College</h3><p>AS, Computer Science; Phi Beta Kappa</p></div></div>
+      </section>
+      <section>
+        <h2>Also</h2>
+        <ul class="pills"><li>FAA Part 107 remote pilot</li><li>French &amp; English, bilingual</li><li>Adobe Youth Voices volunteer</li><li>Writes on dev.to</li><li>Composes a song per stage</li></ul>
+      </section>
+    </div>
+  </div>
+
+  <div class="foot"><span>Portfolio with full case studies: jacklehamster.github.io/portfolio</span><span>Updated October 2026</span></div>
+</div>
+</body>
+</html>
