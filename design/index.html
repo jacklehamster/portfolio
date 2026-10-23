@@ -21,6 +21,7 @@
   <div class="wrap">
     <a class="brand" href="../"><span class="drop" aria-hidden="true"></span>Vincent Le Quang</a>
     <nav class="nav" aria-label="Sections">
+      <a href="#coldread">Cold Read</a>
       <a href="#troll">Power Troll</a>
       <a href="#turtle">World of Turtle</a>
       <a href="#access">Accessibility</a>
@@ -41,7 +42,7 @@
       <h1 id="h1">I design games people can read in one glance, <em>then I build them end to end.</em></h1>
       <p class="lede">Interface, levels, art, animation, music and code, all by one pair of hands, from 48‑hour jams to Steam. Thirteen years of deciding what a player sees first, what a button must never do, and how a game stays playable with one finger or no eyes at all.</p>
       <div class="hero-cta">
-        <a class="btn btn-red" href="#troll">See the work ↓</a>
+        <a class="btn btn-red" href="#coldread">See the work ↓</a>
         <a class="btn btn-ghost" href="resume.html">Résumé</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/vincentlequang/">LinkedIn</a>
       </div>
@@ -63,11 +64,72 @@
 
 <div id="work"></div>
 
+<!-- ===================== 00 COLD READ ===================== -->
+<section class="section case-troll" id="coldread" aria-labelledby="h-cold">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="num">00 / 05 · newest</div>
+      <div>
+        <h2 id="h-cold">Cold Read: designed for an audience of one</h2>
+        <p class="meta"><b>A reading room for screenwriters, on a phone</b> · 2026 · app 2.9, used every night on my own 122-page feature · design, writing, prototype shipped as working software</p>
+      </div>
+    </div>
+
+    <div class="phones">
+      <figure class="phone"><img src="img/coldread-title.webp" width="860" height="1604" alt="Cold Read on a phone: the title page of BUG read by Leora, with Bella replying underneath; a scene strip across the top; a black Next, Scene 21 button at the bottom." loading="lazy"><figcaption><b>Title page.</b> Two readers, Leora and Bella, have seen one word of the script. They react, then reply to each other.</figcaption></figure>
+      <figure class="phone"><img src="img/coldread-talk2.webp" width="860" height="1604" alt="The two readers finishing their exchange, then Leora’s first reaction to Scene 01: Okay, so NOT the lone guy with the infestation, we were both wrong." loading="lazy"><figcaption><b>Scene 01.</b> The expectation they built together breaks on the first page. That is the moment the tool exists for.</figcaption></figure>
+      <figure class="phone"><img src="img/coldread-scene12.webp" width="860" height="1604" alt="Scene 12 reaction by Bella, a long close reading that starts with: This one hurt." loading="lazy"><figcaption><b>Scene 12.</b> One reader, one scene, one honest paragraph. The strip on top shows where you are; the only way forward is Next.</figcaption></figure>
+      <figure class="phone"><img src="img/coldread-config3.webp" width="860" height="1604" alt="The Ask the reader panel: a stack of ready-made questions such as Who’s the protagonist, Which character do you distrust, What genre would you say this is, Who do you picture playing Gwen, and a field to type your own." loading="lazy"><figcaption><b>Ask the reader.</b> Fourteen questions a writer should ask and rarely dares to. Your own question comes last, on purpose.</figcaption></figure>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3><span class="tag">The problem</span></h3>
+        <p>A writer cannot get a first read twice. Friends know you, readers are slow, and nobody reacts scene by scene. I wanted what a table read gives you, what the audience feels <em>before</em> they know the ending, and I wanted it at two in the morning, in bed, on my phone.</p>
+      </div>
+      <div class="card soft">
+        <h3><span class="tag">Design decisions</span></h3>
+        <ul>
+          <li>Readers are <b>people, not prompts</b>: describe one, add another to the room, and they argue with each other, not with you.</li>
+          <li><b>Settings lock</b> the moment the read begins. You cannot peek, tweak, or steer a blind read halfway.</li>
+          <li>Readers’ <b>private thoughts are hidden by default</b>. Honest is the point; flattering is a bug.</li>
+          <li><b>One thumb.</b> One column, one big Next button, scene strip on top. Everything else lives behind the gear.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="phones phones-3">
+      <figure class="phone"><img src="img/coldread-talk.webp" width="860" height="1604" alt="Replies indented under the reaction they answer: Leora, then Leora again, then Bella, debating whether the woman in the story gets her own reasons." loading="lazy"><figcaption><b>Threads, not chat.</b> Replies are indented under what they answer. The writer is not in the conversation and cannot defend the script.</figcaption></figure>
+      <figure class="phone"><img src="img/coldread-config.webp" width="860" height="1604" alt="Config and questions panel: text v341, app 2.9, 29 scenes drafted; scene map; Home button; model claude-opus-5-5; the two reader briefs in full." loading="lazy"><figcaption><b>What you cannot change anymore.</b> Model, reader briefs, and the version of the text being read: script and tool are versioned together.</figcaption></figure>
+      <figure class="phone"><img src="img/coldread-skip.webp" width="860" height="1604" alt="Skip a scene: withholds the next scene from the reader to test whether the story survives a gap; Start over if the screenplay was updated; then Where the reader is right now: Bella, Who are you rooting for." loading="lazy"><figcaption><b>Skip a scene.</b> Withhold a scene and see if the reader notices the hole. A test I could not have run with a human.</figcaption></figure>
+    </div>
+
+    <div class="process">
+      <div class="process-head"><h3>Process</h3><span class="mono">2.9 versions, one user</span></div>
+      <div class="cards">
+        <div class="card soft">
+          <h3><span class="tag">What got thrown away</span></h3>
+          <p>A free chat box. The first version let me ask anything, so I asked leading questions. The question bank replaced it, with “type your own” demoted to the bottom. Then editing a reader mid-read, gone for the same reason. Each version removed a way for me to cheat.</p>
+        </div>
+        <div class="card">
+          <h3><span class="tag">How it was made</span></h3>
+          <p>Prototyped directly as working software, in a day, then iterated between drafts of the screenplay: text v341 is read by app 2.9. Monospace on paper, so the tool disappears behind the text, and a layout that was never designed for a desktop because I never use one for this. What I would change for a second user: readers you can save and share, and two drafts side by side.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="shipped">
+      <span class="tag">In use</span>
+      <span>Every draft of <a href="http://bug.dobuki.net/">BUG</a> since v300 went through it · the screenplay reached the finals at Cinema Royale, Paris Edition, 2026 · built as a Claude artifact: the prototype is the product.</span>
+    </div>
+  </div>
+</section>
+
 <!-- ===================== 01 POWER TROLL ===================== -->
 <section class="section case-troll" id="troll" aria-labelledby="h-troll">
   <div class="wrap">
     <div class="section-head">
-      <div class="num">01 / 04</div>
+      <div class="num">01 / 05</div>
       <div>
         <h2 id="h-troll">The Supernatural Power Troll</h2>
         <p class="meta"><b>Puzzle platformer</b> · GameDev.js Jam 2024 → Steam, December 2024 · design, art, UI, levels, editor, music · solo</p>
@@ -174,7 +236,7 @@
 <section class="section case-turtle" id="turtle" aria-labelledby="h-turtle">
   <div class="wrap">
     <div class="section-head">
-      <div class="num">02 / 04</div>
+      <div class="num">02 / 05</div>
       <div>
         <h2 id="h-turtle">World of Turtle</h2>
         <p class="meta"><b>Sokoban puzzle</b> · BASIC (ASCII) → Flash on Newgrounds, 2011–2013 → TypeScript / WebGL on Steam and Google Play, 2023 · design, art, UI, 100 levels · solo</p>
@@ -260,7 +322,7 @@
 <section class="section case-access" id="access" aria-labelledby="h-access">
   <div class="wrap">
     <div class="section-head">
-      <div class="num">03 / 04</div>
+      <div class="num">03 / 05</div>
       <div>
         <h2 id="h-access">Designing for one button, or no eyes</h2>
         <p class="meta"><b>Blink Pong and Darwin Gator</b> · LowRezJam and AccessibilityJam, 2014 · App Store and Google Play · solo</p>
@@ -306,7 +368,7 @@
 <section class="section case-misc" id="more" aria-labelledby="h-more">
   <div class="wrap">
     <div class="section-head">
-      <div class="num">04 / 04</div>
+      <div class="num">04 / 05</div>
       <div>
         <h2 id="h-more">Three more, briefly</h2>
         <p class="meta">An adventure game, a 13‑kilobyte roguelike, and a launcher for twenty-three games.</p>
